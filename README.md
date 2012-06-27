@@ -5,7 +5,7 @@ jQuery plugin what move html element without Javascript coding.
 
 <a href="http://akazah.github.com/jQuery.Sprite.js/test.html" >Sample page</a>
 
-## 1.Put this bottom of `<body></body>`.
+## 1.Put this into bottom of `<body></body>`.
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="jquery.sprite.js"></script><script>var tm = setInterval("loop()",$("body").data("fps"));function loop(){$(".sprite").jqs_nMove();}</script>
 
 
@@ -28,7 +28,7 @@ ex)
     <div class="sprite" data-x="amount" data-y="amount">
 
 ex)
-'<div class="sprite" data-x="2" data-y="-1">'
+`<div class="sprite" data-x="2" data-y="-1">`
 
 
 If you want to set first postion use css(top%left).
