@@ -14,7 +14,7 @@ jQuery plugin what move html element without Javascript coding.
     <body data-fps="fps">
 
 ex)
-    <body data-fps"100"> # frame will reload once per 100 mili seconds.
+    `<body data-fps"100">` # frame will reload once per 100 mili seconds.
 
 
 ## 3.Set class and move amount
