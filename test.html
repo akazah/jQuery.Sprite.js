@@ -3,41 +3,41 @@
 <html>
   <head>
     <style>
-    .pages{position:fixed;}
+    .sprite{position:fixed;}
     </style>
-  <body>
-    <div id="page1" class="pages" data-nx="10" data-ny="1" style="width:200px;height:200px;background-color:#333;">
+  <body data-fps="10">
+    <div id="page1" class="sprite" data-nx="10" data-ny="1" style="width:200px;height:200px;background-color:#333;">
       <h1>Page1</h1>
       <p>Page1 content</p>
     </div>
-    <div id="page2" class="pages" data-nx="4" data-ny="1" style="width:200px;height:200px;background-color:#433;">
+    <div id="page2" class="sprite" data-nx="4" data-ny="1" style="width:200px;height:200px;background-color:#433;">
       <h1>Page2</h1>
       <p>Page2 content</p>
     </div>
-    <div id="page3" class="pages" data-nx="1" data-ny="-1" style="width:200px;height:200px;background-color:#533;">
+    <div id="page3" class="sprite" data-nx="1" data-ny="-1" style="width:200px;height:200px;background-color:#533;">
       <h1>Page3</h1>
       <p>Page3 content</p>
     </div>
-    <div id="page4" class="pages" data-nx="3" data-ny="1" style="width:200px;height:200px;background-color:#633;">
+    <div id="page4" class="sprite" data-nx="3" data-ny="1" style="width:200px;height:200px;background-color:#633;">
       <h1>Page4</h1>
       <p>Page4 content</p>
     </div>
-    <div id="page5" class="pages" data-nx="1" data-ny="-1" style="width:200px;height:200px;background-color:#733;">
+    <div id="page5" class="sprite" data-nx="1" data-ny="-1" style="width:200px;height:200px;background-color:#733;">
       <h1>Page5</h1>
       <p>Page5 content</p>
     </div>
-    <div id="page6" class="pages" data-nx="1" data-ny="1" style="width:200px;height:200px;background-color:#833;">
+    <div id="page6" class="sprite" data-nx="1" data-ny="1" style="width:200px;height:200px;background-color:#833;">
       <h1>Page6</h1>
       <p>Page6 content</p>
     </div>
-    <div id="page7" class="pages" data-nx="-1" data-ny="2" style="width:200px;height:200px;background-color:#933;">
+    <div id="page7" class="sprite" data-nx="-1" data-ny="2" style="width:200px;height:200px;background-color:#933;">
       <h1>Page7</h1>
       <p>Page7 content</p>
     </div>
-    <div id="page8" class="pages" data-nx="1" data-ny="1" style="width:200px;height:200px;background-color:#933;">
+    <div id="page8" class="sprite" data-nx="1" data-ny="1" style="width:200px;height:200px;background-color:#933;">
       <h1>Page7</h1>
       <p>Page7 content</p>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="jquery.sprite.js"></script><script>var tm = setInterval("loop()",10);function loop(){$("div").jqs_nMove();}</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="jquery.sprite.js"></script><script>var tm = setInterval("loop()",$("body").data("fps"));function loop(){$(".sprite").jqs_nMove();}</script>
   </body>
 </html>
