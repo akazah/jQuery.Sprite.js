@@ -28,7 +28,7 @@ ex)
     <div class="sprite" data-x="amount" data-y="amount">
 
 ex)
-    <div class="sprite" data-x="2" data-y="-1">
+'<div class="sprite" data-x="2" data-y="-1">'
 
 
 If you want to set first postion use css(top%left).
